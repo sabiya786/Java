@@ -1,13 +1,13 @@
 package javaPracticeProgram;
 
-public class LogicalOperator 
+public class BitwiseOperator 
 {
 	public void method()
 	{
 		int a=10,b=20;
 
-		//logical && operator
-		if(a>b && a!=b)
+		//Bitwise & operator
+		if(a>b & a!=b)
 		{
 			System.out.println("pass");
 		}
@@ -16,8 +16,8 @@ public class LogicalOperator
 			System.out.println("Fail");
 		}
 
-		//logical || operator
-		if(a>b || a!=b)
+		//Bitwise | operator
+		if(a>b | a==b)
 		{
 			System.out.println("pass");
 		}
@@ -29,8 +29,9 @@ public class LogicalOperator
 
 	public static void main(String []args)
 	{
-		LogicalOperator obj = new LogicalOperator();
+		BitwiseOperator obj = new BitwiseOperator();
 		obj.method();
 	}
+	
 
 }
